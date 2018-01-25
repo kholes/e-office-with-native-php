@@ -1,0 +1,21 @@
+/* CSS Document */
+#top{display:block; width:100%; min-width:980px; height:150px;background:url(../img/bg-top.png) repeat-x top; position:fixed; top:0; z-index:99;box-shadow: 2px 5px 2px #ccc;}
+#top .wrp{display:block; width:100%; min-width:980px; height:150px;background:url(../img/bg-top-trp.png) no-repeat left;text-shadow: #666 0.1em 0.1em 0.2em}
+#top h1{color:#fff; text-align:center; font-size:14px; font-weight:normal; letter-spacing:2px; font-family:'Times New Roman';transform:scale(2,3); /* W3C */
+-webkit-transform:scale(2,3); /* Safari and Chrome */
+-moz-transform:scale(1.5,2.5); /* Firefox */
+-ms-transform:scale(2,3); /* IE 9 */
+-o-transform:scale(2,3); /* Opera */}
+.top-menu {display:block; width:100%; height:100px; min-width:980px; background:url(../img/transpatent-black.png) repeat-x bottom #fff; position:fixed; top:145px; border-bottom:2px solid #ddd; z-index:99;}
+.top-menu ul {	margin: 0;padding: 0;list-style: none;display: block;}
+.top-menu li {font-size: 10px;color: #999;	text-align: center;	width: 80px;height: 80px;padding: 0;margin: 6px;display: block;float: left;}
+.top-menu li{text-align:center; float:left; line-height:10px; padding:10px;}
+.top-menu li a{color:#A40000; font-weight:bold; font-size:12px;}
+.top-menu li a:hover{text-decoration:none; color:#FF0000;}
+.left-top{width:70%; min-width:730px; float:left;}
+.left-top h3{font-size:24px; color:#fff; padding:10px 0 0 20px;}
+.left-top img{ margin-top:10px;}
+.right-top{width:25%; min-width:200px; float:right; text-align:right;}
+.right-top p{color:#fff; text-transform:uppercase; font-weight:bold; font-size:12px;}
+.right-top img{width:60px; height:60px;}
+.info-user{float:right; min-width:100px; height:70px; margin-top:2px; cursor:pointer;}

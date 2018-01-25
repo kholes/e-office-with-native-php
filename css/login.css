@@ -1,0 +1,26 @@
+/* CSS Document */
+@font-face {
+    font-family: 'terdos';
+    src: url('../fonts/Terminal Dosis-Light.eot');
+    src: url('../fonts/Terminal Dosis-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Terminal Dosis-Light.woff') format('woff'),
+         url('../fonts/Terminal Dosis-Light.ttf') format('truetype'),
+         url('../fonts/Terminal Dosis-Light.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{background:url(../img/bg-body.png) repeat-x #081E28; font-family:'terdos'; padding:0; margin:0;}
+.c{clear:both;}
+.running{ display:block; width:980px; margin:auto; height:40px; margin-top:-40px;}
+.wrp{ display:block; width:100%; min-width:980px; position:fixed; top:230px; height:250px;background:url(../img/bg-frm.png) repeat-x top ;}
+.login{display:block; width:700px; min-width:600px; margin:auto;}
+.frm{ display:block; width:300px; min-width:350px; float:left;}
+.warn{ display:block;min-width:250px; float:right;}
+.warn h1{margin:0; padding:0; color:#FFFFFF; font-weight:bold;}
+.warn p{ color:#fff;}
+.frm input[type='text']{font-size:14px; font-family:'terdos'; color:#333; border:1px solid #ccc; margin:5px 10px; padding:3px; background:#fff;min-width:200px;}
+.frm input[type='password']{font-size:14px; font-family:'terdos'; color:#333; border:1px solid #ccc; margin:5px 10px; padding:3px; min-width:200px; background:#fff;}
+.frm input[type='submit']{font-size:14px; font-family:'terdos'; font-weight:bold; letter-spacing:2px; color:#fff; border: none; margin:10px; padding:5px; min-width:10px; background:#375F75; cursor:pointer;}
+.frm input[type='submit']:hover{background:#55859F;}
+.frm input[type='submit']:click{background:#375F75;}
+.frm p{color:#fff; font-weight:bold;}

@@ -1,0 +1,21 @@
+body{ font-family:Arial, Helvetica, sans-serif; font-size:11px; margin:5px; padding:5px;}
+@media print{
+	#menu{ visibility:hidden; position:fixed; top: 20px; right:0px; min-width:200px;}
+	#paging{ visibility:hidden; position:fixed; top: 20px; right:0px; min-width:200px;}
+}
+
+#menu{ display:block; min-width:60px; position:fixed; right:20px; top:0;}
+#menu img{opacity:0.4;}
+#menu img:hover{opacity:0.9;}
+#menu a:hover{ cursor:pointer;}
+a{color:#000; text-decoration:none;}
+a:hover{ text-decoration:underline;}
+h1,h2,h3{padding:0; margin:0;}
+.b{font-weight:bold;}
+td{border-bottom:1px solid #333; font-size:12px; vertical-align:top; padding:7px 7px 0 10px;}
+th{vertical-align:top; border-bottom:1px solid #333; font-size:12px; background:#bbb;padding:7px 7px 7px 10px; color:#000;}
+#header{text-align:center;}
+#header h2{padding:5px 0 10px 0; border-bottom:1px solid #000; margin-bottom:10px; letter-spacing:1px;}
+.detail-aset .form td{font-size:11px;}
+.detail-aset .tabel th{font-weight:bold; background:#ccc; text-align:left; border-top:1px solid #666; border-bottom:1px solid #666;}
+.detail-aset .tabel td{border-bottom:1px solid #666;}

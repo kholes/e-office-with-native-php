@@ -1,0 +1,30 @@
+/* CSS Document */
+@media print{
+	#menu{ visibility:hidden; position:fixed; top: 20px; right:0px; min-width:200px;}
+	#paging{ visibility:hidden; position:fixed; top: 20px; right:0px; min-width:200px;}
+}
+.aset{display:block; width:100%;min-height:100px; box-shadow: 2px 2px 2px 2px #ccc; background:#fff; margin-top:245px;}
+.aset h3{font-size:14px; font-weight:bold; padding:3px;}
+.aset h2{font-size:18px; font-weight:bold; padding:3px;}
+.aset h1{font-size:20px; font-weight:bold; padding:3px;}
+.view-data{width:100%; background:#fff; text-align:center;}
+.view-data td{padding:5px 3px; border:1px solid #000; vertical-align:top;}
+.view-data .th{background:#666666; padding:3px; text-transform:uppercase; font-weight:bold; font-size:13px; color:#fff; text-align:center; vertical-align:middle;}
+.view-data ul li{padding:0; margin:0; padding-bottom:5px;}
+
+
+#menu{ display:block; min-width:60px; position:fixed; right:20px; top:0;}
+#menu img{opacity:0.4;}
+#menu img:hover{opacity:0.9;}
+#menu a:hover{ cursor:pointer;}
+a{color:#000; text-decoration:none;}
+a:hover{ text-decoration:underline;}
+h3{font-size:16px; font-weight:bold; margin-bottom:10px;}
+.b{font-weight:bold;}
+#header{text-align:center;}
+#header h2{padding:5px 0 10px 0; border-bottom:1px solid #000; margin-bottom:10px; letter-spacing:1px;}
+.form td{font-size:12px; padding:5px;}
+.tabel th{font-weight:bold; background:#ccc; border-top:1px solid #666; border-bottom:1px solid #666; font-size:13px; padding:5px;}
+.tabel td{border-bottom:1px solid #666; font-size:12px; padding:5px;}
+.detail-aset{display:block; padding:10px 5px 5px 5px;}
+.detail-aset h3{font-size:12px; font-weight:bold;}

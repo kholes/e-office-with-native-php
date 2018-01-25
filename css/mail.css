@@ -1,0 +1,8 @@
+/* CSS Document */
+.surat{display:block; width:100%;min-height:300px; box-shadow: 2px 2px 2px 2px #ccc; background:#fff; padding-top:5px;}
+.surat td{ vertical-align:middle; padding:3px;}
+.surat td.frm{border:none; vertical-align:top;}
+#head-mail{display:block;width:89.5%;min-width:980px;position:fixed; top:282px; font-weight:bold;background:#eee; padding:5px; box-shadow: 2px 2px 2px 2px #ccc; z-index:10;}
+#head-mail th{text-align:left; background:none; color:#000;}
+#head-mail a{color:#000;}
+

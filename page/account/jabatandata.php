@@ -1,0 +1,61 @@
+<?php
+session_start();
+include "../../lib/lib.php";
+include "../../class/jabatan.cls.php";
+$db=new Db();
+$db->conDb();
+$jabatan=new Jabatan();
+$btn=$_POST['btn'];
+$id=$_POST['id'];
+switch($btn){
+	case 'Cari':
+		$cari=$_POST['cari'];
+		$data=$jabatan->getLike($cari);
+		tabel($data);
+	break;
+	case '':
+		$data=$jabatan->getAll();	
+		tabel($data);
+	break;
+	case 'Simpan':
+		$data=array('jabatan'=>$_POST['jabatan'],'id'=>$_POST['id']);
+		$jabatan->addData($data);		
+		$data=$jabatan->getAll();	
+		tabel($data);
+	break;
+	case 'Edit':
+		$data=array('jabatan'=>$_POST['jabatan'],'id'=>$_POST['id']);
+		$jabatan->updateData($id,$data);		
+		$data=$jabatan->getAll();	
+		tabel($data);
+	break;		
+	case 'Hapus':
+		$jabatan->delData($id);
+		$data=$jabatan->getAll();	
+		tabel($data);
+	break;		
+}
+function tabel($data){
+if ($data!=0){
+?>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table">
+		<th width="3%">No</th>
+			<th width="92%" align="left">Nama Jabatan </th>
+			<?php
+			foreach($data as $row){	  	
+				if ($counter % 2 == 0)$warna = $warnaGenap; else $warna = $warnaGanjil;
+			?>
+			<tr onMouseOver="this.style.background='#ccc';this.style.cursor='pointer';" onClick="viewDetail('<?php echo $row['id'];?>');"  onmouseout="this.style.background='#fff';">
+			<td width="3%" align="center"><?php echo $c=$c+1;?></td>
+			<td width="92%"><?php echo $row['id']; ?></td>
+		</tr>
+		<?php
+		}
+		?>
+	</table>
+	<?php
+	}else{ 
+		echo "<p class='pesan'>Data jabatan tidak ditemukan.</p>"; 
+	}
+}
+?>
